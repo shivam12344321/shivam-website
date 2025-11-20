@@ -1,23 +1,43 @@
 export default function Hero() {
-return (
-<section className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-12 py-16">
-<div>
-<h1 className="text-5xl font-extrabold">Shivam Kumar</h1>
-<p className="text-xl text-gray-600 mt-2">Cloud Engineer • Ethical Hacker • Full‑Stack Dev</p>
-<p className="mt-6 text-lg max-w-xl text-gray-700">
-I build secure systems, cloud-native apps and ethical hacking labs for learning and enterprise.
-</p>
-<div className="mt-6">
-<a href="#projects" className="inline-block px-5 py-3 bg-black text-white rounded-lg">View Projects ↓</a>
-</div>
-</div>
+  return (
+    <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-16 px-12 py-24 max-w-7xl mx-auto">
 
+      {/* LEFT TEXT */}
+      <div>
+        <div className="text-6xl font-bold leading-tight">
+          Shivam Kumar
+        </div>
 
-<div className="flex justify-center md:justify-end">
-<div className="w-80 h-80 rounded-2xl shadow-2xl overflow-hidden">
-<img src="/mnt/data/5f28ae9b-065a-4679-a958-c5ce14a3ed36.png" alt="Shivam" className="w-full h-full object-cover" />
-</div>
-</div>
-</section>
-);
+        <p className="text-2xl text-gray-500 mt-3">
+          Cloud Engineer & Ethical Hacker
+        </p>
+
+        <p className="mt-6 text-lg text-gray-600 max-w-lg">
+          Building secure systems, cloud-native apps and ethical hacking labs for learning and enterprise.
+        </p>
+
+        <button className="mt-8 px-6 py-3 bg-black text-white rounded-xl text-lg shadow hover:scale-105 transition">
+          View Projects ↓
+        </button>
+
+        <div className="flex space-x-4 mt-8">
+          <a className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">🐱‍💻</a>
+          <a className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">💼</a>
+          <a className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">📧</a>
+        </div>
+      </div>
+
+      {/* RIGHT IMAGE */}
+      <div className="flex justify-center md:justify-end">
+        <div className="rounded-3xl shadow-xl p-2 bg-white">
+          <img
+            src="shivam.jpg"
+            alt="Shivam"
+            className="w-[380px] h-[380px] object-cover rounded-2xl"
+          />
+        </div>
+      </div>
+
+    </section>
+  );
 }
